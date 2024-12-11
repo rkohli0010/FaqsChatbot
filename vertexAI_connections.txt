@@ -1,0 +1,22 @@
+#Install Google Cloud SDK
+brew install --cask google-cloud-sdk
+# Or manually download and install
+
+#Initialize the sdk
+gcloud init
+
+#Authenticate with gcloud
+gcloud auth login
+
+#Set active project
+gcloud config set project alert-arbor-441919-c4
+
+#Set application default credentials for python
+gcloud auth application-default login
+
+#Setting quota project for ADC
+gcloud auth application-default set-quota-project alert-arbor-441919-c4
+
+#Enabling vertexAI api  
+gcloud services enable aiplatform.googleapis.com
+
